@@ -2,6 +2,10 @@ import { SideNavItems, SideNavSection } from '@modules/navigation/models';
 
 export const sideNavSections: SideNavSection[] = [
     {
+        text: 'YUSEN',
+        items: ['dashboardYusen', 'tablesYusen'],
+    },
+    {
         text: 'CORE',
         items: ['dashboard'],
     },
@@ -16,6 +20,16 @@ export const sideNavSections: SideNavSection[] = [
 ];
 
 export const sideNavItems: SideNavItems = {
+    tablesYusen: {
+        icon: 'table',
+        text: 'Tables',
+        link: '/tables-yusen',
+    },
+    dashboardYusen: {
+        icon: 'tachometer-alt',
+        text: 'Dashboard',
+        link: '/yusen',
+    },
     dashboard: {
         icon: 'tachometer-alt',
         text: 'Dashboard',

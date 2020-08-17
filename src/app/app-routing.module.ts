@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
     {
         path: '',
@@ -38,6 +39,16 @@ const routes: Routes = [
         path: 'version',
         loadChildren: () =>
             import('modules/utility/utility-routing.module').then(m => m.UtilityRoutingModule),
+    },
+    {
+        path: 'yusen',
+        loadChildren: () =>
+            import('modules/dashboard-yusen/dashboard-yusen-routing.module').then(m => m.DashboardYusenRoutingModule),
+    },
+    {
+        path: 'tables-yusen',
+        loadChildren: () =>
+            import('modules/tables-yusen/tables-yusen-routing.module').then(m => m.TablesYusenRoutingModule),
     },
     {
         path: '**',
